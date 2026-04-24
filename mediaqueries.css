@@ -1,122 +1,129 @@
-@media screen and (max-width: 1400px) {
-    #profile {
-        height: 83vh;
-        margin-bottom: 6rem;
+@media screen and (max-width: 1200px) {
+    .hero-section,
+    .about-layout,
+    .experience-grid,
+    .contact-card,
+    .footer-bar {
+        grid-template-columns: 1fr;
     }
-    .about-containers {
-        flex-wrap: wrap;
+
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    #contact,
-    #projects {
-        height: fit-content;
+
+    .hero-title,
+    .section-title,
+    .contact-title {
+        max-width: none;
+    }
+
+    .hero-visual {
+        min-height: 460px;
+    }
+
+    .note-top {
+        right: 4%;
     }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 900px) {
+    .page-shell {
+        width: min(calc(100% - 20px), 1320px);
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 28px;
+    }
+
     #desktop-nav {
         display: none;
     }
+
     #hamburger-nav {
         display: flex;
     }
-    #experience,
-    .experience-details-container {
-        margin-top: 2rem;
-    }
-    #profile,
-    .section-container {
-        display: block;
-    }
-    .arrow {
-        display: none;
-    }
-    section,
-    .section-container {
-        height: fit-content;
-    }
-    section {
-        margin: 0 5%;
-    }
-    .section__pic-container {
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
-        padding-left: 0px;
-    }
-    .about-containers {
-        margin-top: 0;
-    }
-}
 
-@media screen and (max-width: 600px) {
-    #contact,
-    footer {
-        height: 40vh;
+    section {
+        padding: 3.5rem 0;
     }
-    #profile {
-        height: 83vh;
-        margin-bottom: 0;
+
+    .hero-section {
+        min-height: auto;
     }
-    article {
-        font-size: 1rem;
+
+    .hero-visual {
+        order: -1;
+        min-height: 360px;
     }
-    footer nav {
-        height: fit-content;
-        margin-bottom: 2rem;
+
+    .portrait-frame {
+        width: min(100%, 360px);
     }
+
     .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info-upper-container {
+        width: 100%;
+    }
+
+    .footer-links {
         flex-wrap: wrap;
     }
-    .contact-info-container {
-        margin: 0;
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        background-size: auto, auto, auto;
     }
-    .contact-info-container p,
-    .nav-links li a {
-        font-size: 1rem;
-    }
-    .experience-sub-title {
-        font-size: 1.25rem;
-    }
+
     .logo {
-        font-size: 1.5rem;
+        font-size: 1.55rem;
+        max-width: 220px;
+        line-height: 1.05;
     }
-    .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
+
+    .hero-title {
+        font-size: clamp(3rem, 18vw, 4.2rem);
     }
-    .section__pic-container {
-        width: auto;
-        height: 46vw;
+
+    .section-title {
+        font-size: clamp(2.2rem, 13vw, 3.2rem);
+    }
+
+    .meta-chip,
+    .details-container,
+    .contact-card {
+        padding: 1.2rem;
+    }
+
+    .floating-note {
+        position: static;
+        animation: none;
+    }
+
+    .hero-visual {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .btn,
+    .project-btn,
+    .contact-info-container {
+        width: 100%;
         justify-content: center;
     }
-    .section__text__p2 {
-        font-size: 1.25rem;
-    }
-    .title {
-        font-size: 2rem;
-    }
-    .text-container {
-        text-align: justify;
-    }
-}
 
-@media screen and (max-width: 560px) {
-    .details-contaier {
-        flex: auto;
+    .btn-container,
+    #socials-container,
+    .contact-info-upper-container {
+        width: 100%;
     }
-    .details-container-about {
-        flex: auto;
-    }
-    #projects {
-        margin-top: 0rem;
-    }
-}
 
-@media screen and (max-height: 450px) {
-    #about {
-        margin-top: 15rem;
+    .role-row {
+        flex-direction: column;
+        align-items: start;
     }
 }

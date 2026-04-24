@@ -1,274 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Dabeer Ul Haq Qureshi | AI Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
-
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Dabeer Ul Haq Qureshi</div>
-        <div>
+    <div class="page-shell">
+        <nav id="desktop-nav">
+            <a class="logo" href="#profile">Dabeer Ul Haq Qureshi</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Dabeer Ul Haq Qureshi</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <a class="logo" href="#profile">Dabeer Ul Haq Qureshi</a>
+            <div class="hamburger-menu">
+                <button class="hamburger-icon" type="button" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/pic3.jpg" alt="Dabeer Ul Haq Qureshi profile picture" />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Dabeer Ul Haq Qureshi</h1>
-            <p class="section__text__p2">Junior AI Engineer</p>
-            <p class="section__text__p3 ">Smart IS, Islamabad, PAK</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
-            Download CV
-          </button>
-                <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
-          </button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/dabeer-qureshi-35964524a/'" />
-                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/dabeerqureshi'" />
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/pic2.jpg" alt="Profile picture" class="about-pic" />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-                        <h3>Experience</h3>
-                        <p>Junior AI Engineer<br />SMART Technologies<br />July 2025 - Present</p>
+        </nav>
+
+        <main>
+            <section id="profile" class="hero-section reveal-on-scroll">
+                <div class="hero-copy">
+                    <p class="eyebrow">AI systems, automation, and product delivery</p>
+                    <h1 class="hero-title">Building reliable AI products with enterprise discipline.</h1>
+                    <p class="hero-description">
+                        Junior AI Engineer based in Islamabad, focused on production-grade LLM systems, voice automation,
+                        RAG pipelines, and cloud-backed applications that perform under real operating constraints.
+                    </p>
+                    <div class="hero-meta">
+                        <div class="meta-chip">
+                            <span class="meta-label">Role</span>
+                            <strong>Junior AI Engineer</strong>
+                        </div>
+                        <div class="meta-chip">
+                            <span class="meta-label">Current</span>
+                            <strong>SMART Technologies</strong>
+                        </div>
+                        <div class="meta-chip">
+                            <span class="meta-label">Location</span>
+                            <strong>Islamabad, Pakistan</strong>
+                        </div>
                     </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p>B.Sc. Computer Science<br />FAST National University<br />Dean's List | Gold Medalist</p>
+                    <div class="btn-container hero-actions">
+                        <button class="btn btn-primary" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+                        <button class="btn btn-secondary" onclick="location.href='#projects'">View Projects</button>
+                    </div>
+                    <div id="socials-container">
+                        <a class="social-link" href="https://www.linkedin.com/in/dabeer-qureshi-35964524a/" target="_blank" rel="noreferrer">
+                            <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
+                            <span>LinkedIn</span>
+                        </a>
+                        <a class="social-link" href="https://github.com/dabeerqureshi" target="_blank" rel="noreferrer">
+                            <img src="./assets/github.png" alt="GitHub" class="icon" />
+                            <span>GitHub</span>
+                        </a>
                     </div>
                 </div>
-                <div class="text-container">
-                    <p>AI Engineer with experience building production-grade AI systems, voice automation, and enterprise solutions. Skilled in LLMs, RAG architectures, Azure, full-stack development, and workflow automation. Proven ability to design scalable, high-performance systems with measurable impact.</p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Technical Skills</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>JavaScript / React</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>FastAPI / Flask</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>LLMs & RAG</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>LangChain</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Azure Cloud</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Streamlit</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Vapi / n8n</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>SQL / PostgreSQL</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>CI/CD Pipelines</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Docker</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>OpenAI API</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
+                <div class="hero-visual reveal-on-scroll">
+                    <div class="portrait-frame">
+                        <img src="./assets/pic3.jpg" alt="Dabeer Ul Haq Qureshi profile picture" class="hero-portrait" />
+                    </div>
+                    <div class="floating-note note-top">
+                        <span>Focus</span>
+                        <strong>LLMs + RAG</strong>
+                    </div>
+                    <div class="floating-note note-bottom">
+                        <span>Strength</span>
+                        <strong>Azure + APIs</strong>
                     </div>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Professional Experience</h2>
-                    <div style="text-align: left; padding: 1rem;">
-                        <h3 style="margin-bottom: 0.5rem;">Junior AI Engineer</h3>
-                        <p style="color: grey; margin-bottom: 1rem;">SMART Technologies | July 2025 - Present</p>
-                        <ul style="margin: 0; padding-left: 1.5rem; line-height: 1.6;">
-                            <li>Developed enterprise AI systems with Python APIs and RAG pipelines</li>
-                            <li>Designed secure Azure multi-tenant architectures with API gateways</li>
-                            <li>Implemented CI/CD pipelines in Azure DevOps</li>
-                            <li>Achieved 99.9% uptime and sub-second latency</li>
-                        </ul>
+            </section>
+
+            <section id="about" class="content-section">
+                <div class="section-heading reveal-on-scroll">
+                    <p class="eyebrow">About</p>
+                    <h2 class="section-title">A builder who prefers measurable systems over demo-only prototypes.</h2>
+                </div>
+                <div class="about-layout">
+                    <div class="about-panel reveal-on-scroll">
+                        <img src="./assets/pic2.jpg" alt="Dabeer portrait" class="about-pic" />
+                    </div>
+                    <div class="about-content">
+                        <div class="about-containers reveal-on-scroll">
+                            <article class="details-container stat-card">
+                                <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                                <h3>Experience</h3>
+                                <p>Junior AI Engineer<br />SMART Technologies<br />July 2025 - Present</p>
+                            </article>
+                            <article class="details-container stat-card">
+                                <img src="./assets/education.png" alt="Education icon" class="icon" />
+                                <h3>Education</h3>
+                                <p>B.Sc. Computer Science<br />FAST National University<br />Dean's List | Gold Medalist</p>
+                            </article>
+                        </div>
+                        <div class="details-container narrative-card reveal-on-scroll">
+                            <p>
+                                I work across model integration, backend APIs, workflow orchestration, and cloud deployment.
+                                The emphasis is on systems that stay fast, stable, and maintainable after launch, not just during demos.
+                            </p>
+                            <p>
+                                My stack spans Python, FastAPI, LangChain, Azure, React, SQL, and automation tooling. I care about
+                                architecture choices that reduce latency, improve reliability, and make iteration easier for teams.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/ML.jpg" alt="RAG QA System" class="project-img" />
+            </section>
+
+            <section id="experience" class="content-section experience-section">
+                <div class="section-heading reveal-on-scroll">
+                    <p class="eyebrow">Experience</p>
+                    <h2 class="section-title">The technical stack is broad, but the work stays grounded in delivery.</h2>
+                </div>
+                <div class="experience-grid">
+                    <div class="details-container skills-panel reveal-on-scroll">
+                        <div class="panel-header">
+                            <p class="panel-kicker">Capabilities</p>
+                            <h3 class="experience-sub-title">Technical Skills</h3>
+                        </div>
+                        <div class="article-container skills-grid">
+                            <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Python</h3><p>Experienced</p></div></article>
+                            <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>JavaScript / React</h3><p>Experienced</p></div></article>
+                            <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>FastAPI / Flask</h3><p>Experienced</p></div></article>
+                            <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>LLMs &amp; RAG</h3><p>Experienced</p></div></article>
+                            <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>LangChain</h3><p>Experienced</p></div></article>
+                            <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Azure Cloud</h3><p>Experienced</p></div></article>
+                            <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Streamlit</h3><p>Experienced</p></div></article>
+                            <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Vapi / n8n</h3><p>Experienced</p></div></article>
+                            <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>SQL / PostgreSQL</h3><p>Experienced</p></div></article>
+                            <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>CI/CD Pipelines</h3><p>Experienced</p></div></article>
+                            <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Docker</h3><p>Intermediate</p></div></article>
+                            <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>OpenAI API</h3><p>Experienced</p></div></article>
+                        </div>
                     </div>
-                    <h2 class="experience-sub-title project-title">RAG QA System</h2>
-                    <p style="font-size: 0.9rem; color: grey; margin: 0.5rem 0;">Python | LangChain | OpenAI</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dabeerqureshi'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dabeerqureshi'">Live Demo</button>
+                    <div class="details-container timeline-panel reveal-on-scroll">
+                        <div class="panel-header">
+                            <p class="panel-kicker">Work</p>
+                            <h3 class="experience-sub-title">Professional Experience</h3>
+                        </div>
+                        <div class="timeline-entry">
+                            <div class="timeline-marker"></div>
+                            <div>
+                                <div class="role-row">
+                                    <h3>Junior AI Engineer</h3>
+                                    <span>July 2025 - Present</span>
+                                </div>
+                                <p class="timeline-company">SMART Technologies</p>
+                                <ul class="timeline-list">
+                                    <li>Developed enterprise AI systems with Python APIs and retrieval-backed workflows.</li>
+                                    <li>Designed secure Azure multi-tenant architectures with API gateway layers.</li>
+                                    <li>Implemented CI/CD pipelines in Azure DevOps for safer deployments.</li>
+                                    <li>Delivered systems targeting 99.9% uptime and sub-second response times.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/ML.jpg" alt="Voice Assistant" class="project-img" />
+            </section>
+
+            <section id="projects" class="content-section">
+                <div class="section-heading reveal-on-scroll">
+                    <p class="eyebrow">Selected Work</p>
+                    <h2 class="section-title">A portfolio shaped around AI products, automation, and practical interfaces.</h2>
+                </div>
+                <div class="projects-grid">
+                    <article class="details-container color-container project-card reveal-on-scroll">
+                        <div class="project-media">
+                            <img src="./assets/ML.jpg" alt="RAG QA System" class="project-img" />
+                        </div>
+                        <div class="project-content">
+                            <p class="project-tag">Python | LangChain | OpenAI</p>
+                            <h3 class="project-title">RAG QA System</h3>
+                            <p class="project-copy">A retrieval-based question answering system designed for grounded responses, lower hallucination risk, and production-friendly deployment.</p>
+                            <div class="btn-container project-actions">
+                                <button class="btn btn-secondary project-btn" onclick="location.href='https://github.com/dabeerqureshi'">GitHub</button>
+                                <button class="btn btn-secondary project-btn" onclick="location.href='https://github.com/dabeerqureshi'">Live Demo</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="details-container color-container project-card reveal-on-scroll">
+                        <div class="project-media">
+                            <img src="./assets/ML.jpg" alt="Voice-Enabled Intelligent Assistant" class="project-img" />
+                        </div>
+                        <div class="project-content">
+                            <p class="project-tag">Vapi | n8n | FastAPI</p>
+                            <h3 class="project-title">Voice-Enabled Intelligent Assistant</h3>
+                            <p class="project-copy">A voice automation workflow that connects conversational UX, backend orchestration, and service integrations into one usable assistant flow.</p>
+                            <div class="btn-container project-actions">
+                                <button class="btn btn-secondary project-btn" onclick="location.href='https://github.com/dabeerqureshi'">GitHub</button>
+                                <button class="btn btn-secondary project-btn" onclick="location.href='https://github.com/dabeerqureshi'">Live Demo</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="details-container color-container project-card reveal-on-scroll">
+                        <div class="project-media">
+                            <img src="./assets/ML.jpg" alt="University Query Chatbot" class="project-img" />
+                        </div>
+                        <div class="project-content">
+                            <p class="project-tag">Streamlit | LangChain</p>
+                            <h3 class="project-title">University Query Chatbot</h3>
+                            <p class="project-copy">A guided conversational assistant for university questions, built to improve discoverability and reduce repetitive support overhead.</p>
+                            <div class="btn-container project-actions">
+                                <button class="btn btn-secondary project-btn" onclick="location.href='https://github.com/dabeerqureshi'">GitHub</button>
+                                <button class="btn btn-secondary project-btn" onclick="location.href='https://github.com/dabeerqureshi'">Live Demo</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="content-section contact-section reveal-on-scroll">
+                <div class="contact-card">
+                    <div>
+                        <p class="eyebrow">Contact</p>
+                        <h2 class="section-title contact-title">Open to AI engineering roles, collaborations, and product-focused conversations.</h2>
                     </div>
-                    <h2 class="experience-sub-title project-title">Voice-Enabled Intelligent Assistant</h2>
-                    <p style="font-size: 0.9rem; color: grey; margin: 0.5rem 0;">Vapi | n8n | FastAPI</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dabeerqureshi'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dabeerqureshi'">Live Demo</button>
+                    <div class="contact-info-upper-container">
+                        <a class="contact-info-container" href="mailto:qureshidabeer92@gmail.com">
+                            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                            <span>qureshidabeer92@gmail.com</span>
+                        </a>
+                        <a class="contact-info-container" href="https://www.linkedin.com/in/dabeer-qureshi-35964524a/" target="_blank" rel="noreferrer">
+                            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                            <span>LinkedIn</span>
+                        </a>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/ML.jpg" alt="University Chatbot" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">University Query Chatbot</h2>
-                    <p style="font-size: 0.9rem; color: grey; margin: 0.5rem 0;">Streamlit | LangChain</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dabeerqureshi'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dabeerqureshi'">Live Demo</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><a href="mailto:examplemail@gmail.com">qureshidabeer92@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com/in/dabeer-qureshi-35964524a/">LinkedIn</a></p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-bar">
+                <p>Copyright &#169; 2026 Dabeer Ul Haq Qureshi. All Rights Reserved.</p>
+                <ul class="footer-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-        </nav>
-        <p>Copyright &#169; 2025 Dabeer Ul Haq Qureshi. All Rights Reserved.</p>
-    </footer>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
-
 </html>
