@@ -24,6 +24,24 @@
     .note-top {
         right: 4%;
     }
+
+    .ai-project-card {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .ai-project-media {
+        aspect-ratio: 1.4;
+        max-height: 320px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-card--cta {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -71,6 +89,35 @@
 
     .footer-links {
         flex-wrap: wrap;
+    }
+
+    .ai-project-card {
+        padding: 1.2rem;
+    }
+
+    .ai-project-header {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .project-number {
+        font-size: 2rem;
+    }
+
+    .ai-project-title {
+        font-size: 1.5rem;
+    }
+
+    .ai-project-impact {
+        flex-direction: column;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card--cta {
+        padding: 1.5rem;
     }
 }
 
@@ -125,5 +172,71 @@
     .role-row {
         flex-direction: column;
         align-items: start;
+    }
+
+    .ai-project-card {
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .ai-project-media {
+        aspect-ratio: 1.2;
+        max-height: 240px;
+    }
+
+    .ai-project-tags {
+        bottom: 0.5rem;
+        left: 0.5rem;
+    }
+
+    .tech-tag {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .ai-project-title {
+        font-size: 1.3rem;
+    }
+
+    .ai-project-summary {
+        font-size: 0.88rem;
+    }
+
+    .ai-project-detail h4 {
+        font-size: 0.75rem;
+    }
+
+    .ai-project-detail p,
+    .ai-project-features li {
+        font-size: 0.85rem;
+    }
+
+    .impact-badge {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.6rem;
+    }
+
+    .service-card {
+        padding: 1.2rem;
+    }
+
+    .service-title {
+        font-size: 1.2rem;
+    }
+
+    .service-desc {
+        font-size: 0.82rem;
+    }
+
+    .cta-description {
+        font-size: 0.88rem;
+    }
+
+    .cta-benefit {
+        font-size: 0.82rem;
+    }
+
+    .cta-actions {
+        width: 100%;
     }
 }

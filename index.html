@@ -19,6 +19,8 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#ai-automation">AI Automation</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -35,13 +37,15 @@
                     <li><a href="#about" onclick="toggleMenu()">About</a></li>
                     <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                     <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#ai-automation" onclick="toggleMenu()">AI Automation</a></li>
+                    <li><a href="#services" onclick="toggleMenu()">Services</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                 </ul>
             </div>
         </nav>
 
         <main>
-            <section id="profile" class="hero-section reveal-on-scroll">
+<section id="profile" class="hero-section" aria-label="Profile">
                 <div class="hero-copy">
                     <p class="eyebrow">AI systems, automation, and product delivery</p>
                     <h1 class="hero-title">Building reliable AI products with enterprise discipline.</h1>
@@ -56,7 +60,7 @@
                         </div>
                         <div class="meta-chip">
                             <span class="meta-label">Current</span>
-                            <strong>SMART Technologies</strong>
+                            <strong>Smart AI</strong>
                         </div>
                         <div class="meta-chip">
                             <span class="meta-label">Location</span>
@@ -64,8 +68,8 @@
                         </div>
                     </div>
                     <div class="btn-container hero-actions">
-                        <button class="btn btn-primary" onclick="window.open('./assets/resume.pdf')">Download CV</button>
-                        <button class="btn btn-secondary" onclick="location.href='#projects'">View Projects</button>
+                        <a class="btn btn-primary" href="./assets/resume.pdf" download>Download CV</a>
+                        <button class="btn btn-secondary" onclick="location.href='#ai-automation'">View AI Work</button>
                     </div>
                     <div id="socials-container">
                         <a class="social-link" href="https://www.linkedin.com/in/dabeer-qureshi-35964524a/" target="_blank" rel="noreferrer">
@@ -78,7 +82,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="hero-visual reveal-on-scroll">
+                <div class="hero-visual">
                     <div class="portrait-frame">
                         <img src="./assets/pic3.jpg" alt="Dabeer Ul Haq Qureshi profile picture" class="hero-portrait" />
                     </div>
@@ -107,7 +111,7 @@
                             <article class="details-container stat-card">
                                 <img src="./assets/experience.png" alt="Experience icon" class="icon" />
                                 <h3>Experience</h3>
-                                <p>Junior AI Engineer<br />SMART Technologies<br />July 2025 - Present</p>
+                                <p>Junior AI Engineer<br />Smart AI<br />July 2025 - Present</p>
                             </article>
                             <article class="details-container stat-card">
                                 <img src="./assets/education.png" alt="Education icon" class="icon" />
@@ -123,6 +127,13 @@
                             <p>
                                 My stack spans Python, FastAPI, LangChain, Azure, React, SQL, and automation tooling. I care about
                                 architecture choices that reduce latency, improve reliability, and make iteration easier for teams.
+                            </p>
+                            <p>
+                                Beyond traditional AI pipelines, I specialise in building end-to-end automation workflows using
+                                <strong>n8n</strong>, <strong>Vapi</strong>, <strong>OpenAI</strong>, and the <strong>Model Context Protocol (MCP)</strong>.
+                                From AI-powered email assistants to voice-enabled receptionists and multi-channel outreach systems,
+                                I design automation that delivers measurable business outcomes — reduced manual work, faster response times,
+                                and systems that operate 24/7 without human intervention.
                             </p>
                         </div>
                     </div>
@@ -144,7 +155,7 @@
                             <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Python</h3><p>Experienced</p></div></article>
                             <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>JavaScript / React</h3><p>Experienced</p></div></article>
                             <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>FastAPI / Flask</h3><p>Experienced</p></div></article>
-                            <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>LLMs &amp; RAG</h3><p>Experienced</p></div></article>
+                            <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>LLMs & RAG</h3><p>Experienced</p></div></article>
                             <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>LangChain</h3><p>Experienced</p></div></article>
                             <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Azure Cloud</h3><p>Experienced</p></div></article>
                             <article class="skill-item"><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Streamlit</h3><p>Experienced</p></div></article>
@@ -167,7 +178,7 @@
                                     <h3>Junior AI Engineer</h3>
                                     <span>July 2025 - Present</span>
                                 </div>
-                                <p class="timeline-company">SMART Technologies</p>
+                                <p class="timeline-company">Smart AI</p>
                                 <ul class="timeline-list">
                                     <li>Developed enterprise AI systems with Python APIs and retrieval-backed workflows.</li>
                                     <li>Designed secure Azure multi-tenant architectures with API gateway layers.</li>
@@ -188,7 +199,7 @@
                 <div class="projects-grid">
                     <article class="details-container color-container project-card reveal-on-scroll">
                         <div class="project-media">
-                            <img src="./assets/ML.jpg" alt="RAG QA System" class="project-img" />
+                            <img src="./assets/AI.jpg" alt="RAG QA System" class="project-img" />
                         </div>
                         <div class="project-content">
                             <p class="project-tag">Python | LangChain | OpenAI</p>
@@ -203,7 +214,7 @@
 
                     <article class="details-container color-container project-card reveal-on-scroll">
                         <div class="project-media">
-                            <img src="./assets/ML.jpg" alt="Voice-Enabled Intelligent Assistant" class="project-img" />
+                            <img src="./assets/AI.jpg" alt="Voice-Enabled Intelligent Assistant" class="project-img" />
                         </div>
                         <div class="project-content">
                             <p class="project-tag">Vapi | n8n | FastAPI</p>
@@ -218,7 +229,7 @@
 
                     <article class="details-container color-container project-card reveal-on-scroll">
                         <div class="project-media">
-                            <img src="./assets/ML.jpg" alt="University Query Chatbot" class="project-img" />
+                            <img src="./assets/AI.jpg" alt="University Query Chatbot" class="project-img" />
                         </div>
                         <div class="project-content">
                             <p class="project-tag">Streamlit | LangChain</p>
@@ -233,21 +244,624 @@
                 </div>
             </section>
 
-            <section id="contact" class="content-section contact-section reveal-on-scroll">
-                <div class="contact-card">
-                    <div>
-                        <p class="eyebrow">Contact</p>
-                        <h2 class="section-title contact-title">Open to AI engineering roles, collaborations, and product-focused conversations.</h2>
+            <section id="ai-automation" class="content-section ai-automation-section">
+                <div class="section-heading reveal-on-scroll">
+                    <p class="eyebrow">AI Automation Portfolio</p>
+                    <h2 class="section-title">Featured AI Automation Projects</h2>
+                    <p class="section-subtitle">
+                        Production-grade automation systems built with n8n, Vapi, OpenAI, MCP, and modern API ecosystems.
+                        Each project is designed to eliminate manual work, reduce operational overhead, and deliver measurable business outcomes.
+                    </p>
+                </div>
+
+                <!-- Project 1: AI Gmail Email Assistant -->
+                <article class="ai-project-card reveal-on-scroll">
+                    <div class="ai-project-media">
+                        <img src="./assets/AI.jpg" alt="AI Gmail Email Assistant" class="ai-project-img" />
+                        <div class="ai-project-tags">
+                            <span class="tech-tag">n8n</span>
+                            <span class="tech-tag">OpenAI</span>
+                            <span class="tech-tag">Gmail API</span>
+                            <span class="tech-tag">Ollama</span>
+                        </div>
                     </div>
-                    <div class="contact-info-upper-container">
-                        <a class="contact-info-container" href="mailto:qureshidabeer92@gmail.com">
-                            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                            <span>qureshidabeer92@gmail.com</span>
+                    <div class="ai-project-content">
+                        <div class="ai-project-header">
+                            <span class="project-number">01</span>
+                            <div>
+                                <p class="ai-project-elevator">Automate your inbox with AI-powered email intelligence.</p>
+                                <h3 class="ai-project-title">AI Gmail Email Assistant</h3>
+                            </div>
+                        </div>
+                        <p class="ai-project-summary">
+                            An intelligent email assistant that reads incoming Gmail messages, summarizes content, detects priority and category, 
+                            generates professional reply drafts, and identifies spam — all automatically. Built on n8n with OpenAI for natural language 
+                            understanding and the Gmail API for seamless inbox integration.
+                        </p>
+                        <div class="ai-project-detail">
+                            <h4>Business Problem</h4>
+                            <p>Professionals waste hours daily sorting through emails, prioritizing responses, and drafting replies. Critical messages get buried, response times lag, and productivity suffers.</p>
+                        </div>
+                        <div class="ai-project-detail">
+                            <h4>Key Features</h4>
+                            <ul class="ai-project-features">
+                                <li>AI-powered email summarization for quick scanning</li>
+                                <li>Priority and urgency detection to flag critical messages</li>
+                                <li>Automatic category classification (billing, support, general, etc.)</li>
+                                <li>Professional reply draft generation with context awareness</li>
+                                <li>Spam and phishing detection using LLM analysis</li>
+                                <li>Daily or real-time email digest summaries</li>
+                            </ul>
+                        </div>
+                        <div class="ai-project-detail">
+                            <h4>Technologies Used</h4>
+                            <div class="tech-stack">
+                                <span class="tech-tag">n8n</span>
+                                <span class="tech-tag">OpenAI GPT-4</span>
+                                <span class="tech-tag">Gmail API</span>
+                                <span class="tech-tag">Ollama</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Webhooks</span>
+                            </div>
+                        </div>
+                        <div class="ai-project-impact">
+                            <span class="impact-badge">Reduces email processing time by 70%</span>
+                            <span class="impact-badge">Ensures no priority email is missed</span>
+                            <span class="impact-badge">Saves 10+ hours per week</span>
+                        </div>
+                        <div class="ai-project-meta">
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Email Automation</span>
+                                <span class="portfolio-tag">AI Assistant</span>
+                                <span class="portfolio-tag">n8n Workflow</span>
+                            </div>
+                            <p class="github-desc"><strong>GitHub:</strong> AI-powered Gmail assistant using n8n and OpenAI for email summarization, priority detection, auto-reply drafting, and spam filtering.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Gym Payment Reminder Automation -->
+                <article class="ai-project-card ai-project-card--reverse reveal-on-scroll">
+                    <div class="ai-project-media">
+                        <img src="./assets/AI.jpg" alt="Gym Payment Reminder Automation" class="ai-project-img" />
+                        <div class="ai-project-tags">
+                            <span class="tech-tag">n8n</span>
+                            <span class="tech-tag">WhatsApp API</span>
+                            <span class="tech-tag">Gmail API</span>
+                        </div>
+                    </div>
+                    <div class="ai-project-content">
+                        <div class="ai-project-header">
+                            <span class="project-number">02</span>
+                            <div>
+                                <p class="ai-project-elevator">Never miss a payment with automated, personalized reminders.</p>
+                                <h3 class="ai-project-title">Gym Payment Reminder Automation</h3>
+                            </div>
+                        </div>
+                        <p class="ai-project-summary">
+                            An automated system that tracks gym membership payments and sends personalized reminders to members about upcoming 
+                            or overdue dues. Eliminates manual follow-up, improves collection rates, and keeps members informed through their 
+                            preferred communication channel.
+                        </p>
+                        <div class="ai-project-detail">
+                            <h4>Business Problem</h4>
+                            <p>Gym owners and managers spend hours each week manually following up with members about payments. Late payments accumulate, cash flow suffers, and the administrative burden distracts from core business operations.</p>
+                        </div>
+                        <div class="ai-project-detail">
+                            <h4>Key Features</h4>
+                            <ul class="ai-project-features">
+                                <li>Automated payment tracking across all membership plans</li>
+                                <li>Personalized WhatsApp and email reminders</li>
+                                <li>Upcoming payment notifications (3 days before due date)</li>
+                                <li>Overdue payment escalation (1 day, 7 days, 14 days past due)</li>
+                                <li>Customizable reminder templates per membership tier</li>
+                                <li>Payment confirmation and receipt delivery</li>
+                            </ul>
+                        </div>
+                        <div class="ai-project-detail">
+                            <h4>Technologies Used</h4>
+                            <div class="tech-stack">
+                                <span class="tech-tag">n8n</span>
+                                <span class="tech-tag">WhatsApp Business API</span>
+                                <span class="tech-tag">Gmail API</span>
+                                <span class="tech-tag">Google Sheets</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                        </div>
+                        <div class="ai-project-impact">
+                            <span class="impact-badge">Reduces late payments by 40%</span>
+                            <span class="impact-badge">Saves 15+ hours per week in manual follow-up</span>
+                            <span class="impact-badge">Improves member payment experience</span>
+                        </div>
+                        <div class="ai-project-meta">
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Payment Automation</span>
+                                <span class="portfolio-tag">WhatsApp Bot</span>
+                                <span class="portfolio-tag">n8n Workflow</span>
+                            </div>
+                            <p class="github-desc"><strong>GitHub:</strong> Automated gym payment reminder system using n8n, WhatsApp API, and Gmail API to reduce late payments and eliminate manual follow-up.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: AI Bulk Outreach Automation -->
+                <article class="ai-project-card reveal-on-scroll">
+                    <div class="ai-project-media">
+                        <img src="./assets/AI.jpg" alt="AI Bulk Outreach Automation" class="ai-project-img" />
+                        <div class="ai-project-tags">
+                            <span class="tech-tag">n8n</span>
+                            <span class="tech-tag">OpenAI</span>
+                            <span class="tech-tag">Gmail API</span>
+                        </div>
+                    </div>
+                    <div class="ai-project-content">
+                        <div class="ai-project-header">
+                            <span class="project-number">03</span>
+                            <div>
+                                <p class="ai-project-elevator">Scale your lead generation with AI-personalized cold emails.</p>
+                                <h3 class="ai-project-title">AI Bulk Outreach Automation</h3>
+                            </div>
+                        </div>
+                        <p class="ai-project-summary">
+                            A bulk outreach system that sends personalized cold emails at scale, with AI customizing each message based on 
+                            recipient data. Tracks campaign progress, supports automated follow-ups, and provides analytics — ideal for 
+                            sales teams and lead generation agencies.
+                        </p>
+                        <div class="ai-project-detail">
+                            <h4>Business Problem</h4>
+                            <p>Manual cold outreach is time-consuming and lacks personalization at scale. Generic templates get ignored, follow-ups are inconsistent, and sales teams struggle to maintain pipeline velocity.</p>
+                        </div>
+                        <div class="ai-project-detail">
+                            <h4>Key Features</h4>
+                            <ul class="ai-project-features">
+                                <li>AI-driven email personalization using recipient data (name, company, industry, role)</li>
+                                <li>Bulk sending with rate limiting and deliverability optimization</li>
+                                <li>Automated follow-up sequences (3-touch, 5-touch campaigns)</li>
+                                <li>Campaign tracking with open rates, reply rates, and bounce detection</li>
+                                <li>Lead scoring based on engagement signals</li>
+                                <li>A/B testing for subject lines and email content</li>
+                            </ul>
+                        </div>
+                        <div class="ai-project-detail">
+                            <h4>Technologies Used</h4>
+                            <div class="tech-stack">
+                                <span class="tech-tag">n8n</span>
+                                <span class="tech-tag">OpenAI GPT-4</span>
+                                <span class="tech-tag">Gmail API / SMTP</span>
+                                <span class="tech-tag">Google Sheets</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Webhooks</span>
+                            </div>
+                        </div>
+                        <div class="ai-project-impact">
+                            <span class="impact-badge">3x higher response rates vs. generic templates</span>
+                            <span class="impact-badge">90% reduction in manual outreach effort</span>
+                            <span class="impact-badge">Scales to 1,000+ personalized emails per day</span>
+                        </div>
+                        <div class="ai-project-meta">
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Lead Generation</span>
+                                <span class="portfolio-tag">Email Marketing</span>
+                                <span class="portfolio-tag">AI Personalization</span>
+                            </div>
+                            <p class="github-desc"><strong>GitHub:</strong> AI-powered bulk outreach automation that personalizes cold emails at scale using n8n and OpenAI, with campaign tracking and automated follow-ups.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: WhatsApp AI FAQ Assistant -->
+                <article class="ai-project-card ai-project-card--reverse reveal-on-scroll">
+                    <div class="ai-project-media">
+                        <img src="./assets/AI.jpg" alt="WhatsApp AI FAQ Assistant" class="ai-project-img" />
+                        <div class="ai-project-tags">
+                            <span class="tech-tag">n8n</span>
+                            <span class="tech-tag">OpenAI</span>
+                            <span class="tech-tag">WhatsApp API</span>
+                            <span class="tech-tag">Ollama</span>
+                        </div>
+                    </div>
+                    <div class="ai-project-content">
+                        <div class="ai-project-header">
+                            <span class="project-number">04</span>
+                            <div>
+                                <p class="ai-project-elevator">Instant customer support, 24/7, directly on WhatsApp.</p>
+                                <h3 class="ai-project-title">WhatsApp AI FAQ Assistant</h3>
+                            </div>
+                        </div>
+                        <p class="ai-project-summary">
+                            An AI-powered chatbot integrated with WhatsApp that instantly answers customer FAQs, handles repetitive support 
+                            questions, and escalates complex issues to human agents when needed. Provides 24/7 support without increasing 
+                            headcount.
+                        </p>
+                        <div class="ai-project-detail">
+                            <h4>Business Problem</h4>
+                            <p>Businesses are overwhelmed by repetitive customer questions — hours of operation, pricing, shipping, returns. Support teams are stretched thin, response times suffer, and customer satisfaction declines.</p>
+                        </div>
+                        <div class="ai-project-detail">
+                            <h4>Key Features</h4>
+                            <ul class="ai-project-features">
+                                <li>24/7 automated FAQ responses on WhatsApp</li>
+                                <li>AI-powered intent recognition and context-aware answers</li>
+                                <li>Smart escalation to human agents with conversation history</li>
+                                <li>Multi-language support for diverse customer bases</li>
+                                <li>Analytics dashboard for common questions and gaps</li>
+                                <li>Seamless handoff to CRM or ticketing system</li>
+                            </ul>
+                        </div>
+                        <div class="ai-project-detail">
+                            <h4>Technologies Used</h4>
+                            <div class="tech-stack">
+                                <span class="tech-tag">n8n</span>
+                                <span class="tech-tag">OpenAI GPT-4</span>
+                                <span class="tech-tag">WhatsApp Business API</span>
+                                <span class="tech-tag">Ollama</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Vector Database</span>
+                            </div>
+                        </div>
+                        <div class="ai-project-impact">
+                            <span class="impact-badge">Handles 80% of support queries automatically</span>
+                            <span class="impact-badge">Reduces response time from hours to seconds</span>
+                            <span class="impact-badge">Frees support team for complex issues</span>
+                        </div>
+                        <div class="ai-project-meta">
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Customer Support</span>
+                                <span class="portfolio-tag">WhatsApp Chatbot</span>
+                                <span class="portfolio-tag">AI FAQ</span>
+                            </div>
+                            <p class="github-desc"><strong>GitHub:</strong> WhatsApp AI FAQ assistant built with n8n and OpenAI that handles 80% of customer queries automatically with 24/7 availability and smart escalation.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: YouTube Auto Upload Automation -->
+                <article class="ai-project-card reveal-on-scroll">
+                    <div class="ai-project-media">
+                        <img src="./assets/AI.jpg" alt="YouTube Auto Upload Automation" class="ai-project-img" />
+                        <div class="ai-project-tags">
+                            <span class="tech-tag">n8n</span>
+                            <span class="tech-tag">OpenAI</span>
+                            <span class="tech-tag">YouTube API</span>
+                        </div>
+                    </div>
+                    <div class="ai-project-content">
+                        <div class="ai-project-header">
+                            <span class="project-number">05</span>
+                            <div>
+                                <p class="ai-project-elevator">Schedule and publish content automatically with AI-generated metadata.</p>
+                                <h3 class="ai-project-title">YouTube Auto Upload Automation</h3>
+                            </div>
+                        </div>
+                        <p class="ai-project-summary">
+                            An automation workflow that uploads videos to YouTube on a schedule, generates titles, descriptions, and tags 
+                            using AI, and organizes the entire publishing workflow. Designed for content creators, media teams, and 
+                            marketing departments who need consistent, scheduled content delivery.
+                        </p>
+                        <div class="ai-project-detail">
+                            <h4>Business Problem</h4>
+                            <p>Content creators spend significant time on manual uploads, writing metadata, scheduling, and organizing playlists. This administrative overhead reduces time available for content creation itself.</p>
+                        </div>
+                        <div class="ai-project-detail">
+                            <h4>Key Features</h4>
+                            <ul class="ai-project-features">
+                                <li>Scheduled video uploads with timezone-aware publishing</li>
+                                <li>AI-generated titles optimized for search and engagement</li>
+                                <li>Auto-generated descriptions with timestamps and links</li>
+                                <li>Smart tag generation based on video content analysis</li>
+                                <li>Automatic playlist assignment and thumbnail selection</li>
+                                <li>Publishing calendar and content pipeline management</li>
+                            </ul>
+                        </div>
+                        <div class="ai-project-detail">
+                            <h4>Technologies Used</h4>
+                            <div class="tech-stack">
+                                <span class="tech-tag">n8n</span>
+                                <span class="tech-tag">OpenAI GPT-4</span>
+                                <span class="tech-tag">YouTube Data API v3</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Google Cloud Storage</span>
+                            </div>
+                        </div>
+                        <div class="ai-project-impact">
+                            <span class="impact-badge">Reduces publishing time by 80%</span>
+                            <span class="impact-badge">Ensures consistent content schedule</span>
+                            <span class="impact-badge">Improves SEO with AI-optimized metadata</span>
+                        </div>
+                        <div class="ai-project-meta">
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Content Automation</span>
+                                <span class="portfolio-tag">YouTube API</span>
+                                <span class="portfolio-tag">AI Metadata</span>
+                            </div>
+                            <p class="github-desc"><strong>GitHub:</strong> YouTube auto-upload automation using n8n and OpenAI that schedules videos and generates AI-optimized titles, descriptions, and tags.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: AI Dentist Receptionist (n8n + Vapi) -->
+                <article class="ai-project-card ai-project-card--reverse reveal-on-scroll">
+                    <div class="ai-project-media">
+                        <img src="./assets/AI.jpg" alt="AI Dentist Receptionist" class="ai-project-img" />
+                        <div class="ai-project-tags">
+                            <span class="tech-tag">n8n</span>
+                            <span class="tech-tag">Vapi</span>
+                            <span class="tech-tag">OpenAI</span>
+                            <span class="tech-tag">Google Calendar API</span>
+                        </div>
+                    </div>
+                    <div class="ai-project-content">
+                        <div class="ai-project-header">
+                            <span class="project-number">06</span>
+                            <div>
+                                <p class="ai-project-elevator">A voice AI receptionist that never sleeps.</p>
+                                <h3 class="ai-project-title">AI Dentist Receptionist (n8n + Vapi)</h3>
+                            </div>
+                        </div>
+                        <p class="ai-project-summary">
+                            An AI-powered voice assistant built with n8n and Vapi that answers incoming calls, checks appointment availability, 
+                            books appointments, handles cancellations and rescheduling, and provides clinic information — operating 24/7 
+                            without human intervention. Designed specifically for dental clinics but adaptable to any service-based business.
+                        </p>
+                        <div class="ai-project-detail">
+                            <h4>Business Problem</h4>
+                            <p>Dental clinics lose patients due to missed calls during business hours and complete unavailability after hours. Front desk staff are overwhelmed with appointment scheduling, cancellations, and basic inquiries, leading to longer hold times and frustrated patients.</p>
+                        </div>
+                        <div class="ai-project-detail">
+                            <h4>Key Features</h4>
+                            <ul class="ai-project-features">
+                                <li>Natural voice conversations powered by Vapi AI</li>
+                                <li>Real-time appointment availability checking via Google Calendar</li>
+                                <li>Automated appointment booking with confirmation messages</li>
+                                <li>Seamless cancellation and rescheduling with voice interaction</li>
+                                <li>Clinic information delivery (hours, location, services, insurance)</li>
+                                <li>24/7 operation — answers every call, every time</li>
+                            </ul>
+                        </div>
+                        <div class="ai-project-detail">
+                            <h4>Technologies Used</h4>
+                            <div class="tech-stack">
+                                <span class="tech-tag">n8n</span>
+                                <span class="tech-tag">Vapi AI</span>
+                                <span class="tech-tag">OpenAI GPT-4</span>
+                                <span class="tech-tag">Google Calendar API</span>
+                                <span class="tech-tag">Twilio</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                        </div>
+                        <div class="ai-project-impact">
+                            <span class="impact-badge">Captures 100% of incoming calls</span>
+                            <span class="impact-badge">Reduces missed appointments by 50%</span>
+                            <span class="impact-badge">Saves 20+ hours per week in receptionist time</span>
+                        </div>
+                        <div class="ai-project-meta">
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Voice AI</span>
+                                <span class="portfolio-tag">Vapi</span>
+                                <span class="portfolio-tag">Appointment Automation</span>
+                            </div>
+                            <p class="github-desc"><strong>GitHub:</strong> AI dentist receptionist using n8n and Vapi — a voice AI that answers calls, books appointments, and handles cancellations 24/7.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 7: MCP Server for AI Receptionist -->
+                <article class="ai-project-card reveal-on-scroll">
+                    <div class="ai-project-media">
+                        <img src="./assets/AI.jpg" alt="MCP Server for AI Receptionist" class="ai-project-img" />
+                        <div class="ai-project-tags">
+                            <span class="tech-tag">MCP</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">n8n</span>
+                            <span class="tech-tag">OpenAI</span>
+                        </div>
+                    </div>
+                    <div class="ai-project-content">
+                        <div class="ai-project-header">
+                            <span class="project-number">07</span>
+                            <div>
+                                <p class="ai-project-elevator">Secure, scalable AI-to-tool integration for enterprise agents.</p>
+                                <h3 class="ai-project-title">MCP Server for AI Receptionist</h3>
+                            </div>
+                        </div>
+                        <p class="ai-project-summary">
+                            A custom MCP (Model Context Protocol) server that enables AI agents to securely interact with business tools — 
+                            connecting the AI receptionist with calendars, databases, booking systems, and external APIs through standardized 
+                            function calling. Designed for scalable, production-grade AI agent workflows.
+                        </p>
+                        <div class="ai-project-detail">
+                            <h4>Business Problem</h4>
+                            <p>AI agents need secure, standardized access to business tools and data sources. Without a structured integration layer, agents cannot perform real-time operations like checking availability, updating records, or triggering workflows.</p>
+                        </div>
+                        <div class="ai-project-detail">
+                            <h4>Key Features</h4>
+                            <ul class="ai-project-features">
+                                <li>MCP protocol implementation for standardized AI-to-tool communication</li>
+                                <li>Secure authentication and authorization layer for all tool access</li>
+                                <li>Calendar integration for real-time availability and booking</li>
+                                <li>Database connectivity for customer records and appointment history</li>
+                                <li>External API gateway for third-party service integration</li>
+                                <li>Scalable architecture supporting multiple concurrent AI agents</li>
+                            </ul>
+                        </div>
+                        <div class="ai-project-detail">
+                            <h4>Technologies Used</h4>
+                            <div class="tech-stack">
+                                <span class="tech-tag">MCP Protocol</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">n8n</span>
+                                <span class="tech-tag">OpenAI Function Calling</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                        </div>
+                        <div class="ai-project-impact">
+                            <span class="impact-badge">Enables enterprise-grade AI agent workflows</span>
+                            <span class="impact-badge">Reduces integration time by 60%</span>
+                            <span class="impact-badge">Provides secure, auditable tool access</span>
+                        </div>
+                        <div class="ai-project-meta">
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">MCP</span>
+                                <span class="portfolio-tag">AI Agents</span>
+                                <span class="portfolio-tag">Enterprise Integration</span>
+                            </div>
+                            <p class="github-desc"><strong>GitHub:</strong> MCP server enabling AI agents to securely interact with calendars, databases, and APIs through standardized function calling for enterprise workflows.</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section id="services" class="content-section services-section">
+                <div class="section-heading reveal-on-scroll">
+                    <p class="eyebrow">What I Build</p>
+                    <h2 class="section-title">AI automation services for modern businesses.</h2>
+                    <p class="section-subtitle">
+                        From voice AI receptionists to intelligent email assistants and multi-channel outreach systems — 
+                        I design and deploy automation that reduces costs, increases efficiency, and operates 24/7.
+                    </p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card reveal-on-scroll">
+                        <div class="service-icon">
+                            <span class="service-icon-symbol">&#x1F916;</span>
+                        </div>
+                        <h3 class="service-title">AI Agent Development</h3>
+                        <p class="service-desc">
+                            Custom AI agents that understand context, make decisions, and execute actions autonomously. 
+                            Built with LLMs, function calling, and MCP for secure tool integration.
+                        </p>
+                        <div class="service-tech">
+                            <span class="tech-tag">OpenAI</span>
+                            <span class="tech-tag">MCP</span>
+                            <span class="tech-tag">LangChain</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal-on-scroll">
+                        <div class="service-icon">
+                            <span class="service-icon-symbol">&#x26A1;</span>
+                        </div>
+                        <h3 class="service-title">Workflow Automation (n8n)</h3>
+                        <p class="service-desc">
+                            End-to-end business process automation using n8n. Connect APIs, databases, and services 
+                            into reliable, monitored workflows that eliminate manual tasks.
+                        </p>
+                        <div class="service-tech">
+                            <span class="tech-tag">n8n</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">Webhooks</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal-on-scroll">
+                        <div class="service-icon">
+                            <span class="service-icon-symbol">&#x1F399;</span>
+                        </div>
+                        <h3 class="service-title">Voice AI Solutions (Vapi)</h3>
+                        <p class="service-desc">
+                            Voice-powered AI assistants that answer calls, book appointments, and handle customer 
+                            inquiries with natural conversation. Available 24/7, no human needed.
+                        </p>
+                        <div class="service-tech">
+                            <span class="tech-tag">Vapi</span>
+                            <span class="tech-tag">Twilio</span>
+                            <span class="tech-tag">OpenAI</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal-on-scroll">
+                        <div class="service-icon">
+                            <span class="service-icon-symbol">&#x1F527;</span>
+                        </div>
+                        <h3 class="service-title">MCP Server Development</h3>
+                        <p class="service-desc">
+                            Custom MCP servers that give AI agents secure, standardized access to your business tools, 
+                            databases, and APIs. The infrastructure layer for enterprise AI.
+                        </p>
+                        <div class="service-tech">
+                            <span class="tech-tag">MCP</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal-on-scroll">
+                        <div class="service-icon">
+                            <span class="service-icon-symbol">&#x1F9E0;</span>
+                        </div>
+                        <h3 class="service-title">Custom LLM Integration</h3>
+                        <p class="service-desc">
+                            Integrate large language models into your existing systems — from RAG pipelines and 
+                            chatbots to document processing and intelligent search.
+                        </p>
+                        <div class="service-tech">
+                            <span class="tech-tag">OpenAI</span>
+                            <span class="tech-tag">Ollama</span>
+                            <span class="tech-tag">LangChain</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal-on-scroll">
+                        <div class="service-icon">
+                            <span class="service-icon-symbol">&#x1F4E8;</span>
+                        </div>
+                        <h3 class="service-title">Business Process Automation</h3>
+                        <p class="service-desc">
+                            Automate repetitive business processes — email handling, payment reminders, lead outreach, 
+                            content publishing, and customer support — with AI-powered workflows.
+                        </p>
+                        <div class="service-tech">
+                            <span class="tech-tag">n8n</span>
+                            <span class="tech-tag">Gmail API</span>
+                            <span class="tech-tag">WhatsApp API</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="content-section contact-section reveal-on-scroll">
+                <div class="contact-card contact-card--cta">
+                    <div class="cta-content">
+                        <p class="eyebrow">Let's Build</p>
+                        <h2 class="section-title contact-title">Ready to automate your business with AI?</h2>
+                        <p class="cta-description">
+                            Whether you need a voice AI receptionist, an intelligent email assistant, a multi-channel outreach system, 
+                            or a custom AI agent — I can design, build, and deploy it. Let's discuss how AI automation can save you 
+                            time, reduce costs, and scale your operations.
+                        </p>
+                        <div class="cta-benefits">
+                            <div class="cta-benefit">
+                                <span class="cta-benefit-icon">&#x2713;</span>
+                                <span>Custom-built for your business needs</span>
+                            </div>
+                            <div class="cta-benefit">
+                                <span class="cta-benefit-icon">&#x2713;</span>
+                                <span>Production-grade reliability and monitoring</span>
+                            </div>
+                            <div class="cta-benefit">
+                                <span class="cta-benefit-icon">&#x2713;</span>
+                                <span>24/7 operation with zero human overhead</span>
+                            </div>
+                            <div class="cta-benefit">
+                                <span class="cta-benefit-icon">&#x2713;</span>
+                                <span>Measurable ROI and business impact tracking</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-actions">
+                        <a class="btn btn-primary cta-btn" href="mailto:qureshidabeer92@gmail.com">
+                            Start a Conversation
                         </a>
-                        <a class="contact-info-container" href="https://www.linkedin.com/in/dabeer-qureshi-35964524a/" target="_blank" rel="noreferrer">
-                            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                            <span>LinkedIn</span>
+                        <a class="btn btn-secondary cta-btn" href="https://www.linkedin.com/in/dabeer-qureshi-35964524a/" target="_blank" rel="noreferrer">
+                            Connect on LinkedIn
                         </a>
+                        <div class="cta-availability">
+                            <span class="availability-dot"></span>
+                            Available for freelance and full-time projects
+                        </div>
                     </div>
                 </div>
             </section>
@@ -260,6 +874,8 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#ai-automation">AI Automation</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
