@@ -22,20 +22,6 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .ai-project-card {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .ai-project-media {
-        aspect-ratio: 1.5;
-        max-height: 300px;
-    }
-
-    .ai-capabilities-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
     .contact-grid {
         gap: 1.5rem;
     }
@@ -99,12 +85,12 @@
         grid-template-columns: 1fr;
     }
 
-    .ai-project-card {
+    .project-card {
         padding: 1.2rem;
         margin-bottom: 1.5rem;
     }
 
-    .ai-project-header {
+    .project-header {
         flex-direction: column;
         gap: 0.3rem;
     }
@@ -113,23 +99,19 @@
         font-size: 1.8rem;
     }
 
-    .ai-project-title {
+    .project-title {
         font-size: 1.3rem;
     }
 
-    .ai-project-impact {
+    .project-impact {
         flex-direction: column;
     }
 
-    .ai-capabilities-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .ai-portfolio-cta {
+    .portfolio-cta {
         padding: 1.5rem;
     }
 
-    .ai-portfolio-cta h3 {
+    .portfolio-cta h3 {
         font-size: 1.3rem;
     }
 
@@ -253,28 +235,18 @@
         width: 100%;
     }
 
-    .ai-project-card {
+    .project-card {
         padding: 1rem;
         margin-bottom: 1.25rem;
     }
 
-    .ai-project-media {
-        aspect-ratio: 1.3;
-        max-height: 200px;
-    }
-
-    .ai-project-tags {
-        bottom: 0.5rem;
-        left: 0.5rem;
-    }
-
-    .ai-project-title {
+    .project-title {
         font-size: 1.15rem;
     }
 
-    .ai-project-summary,
-    .ai-project-detail p,
-    .ai-project-features li {
+    .project-summary,
+    .project-detail p,
+    .project-features li {
         font-size: 0.82rem;
     }
 
