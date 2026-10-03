@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dabeerqureshi.github.io/Dabeer_Portfolio/sitemap.xml
